@@ -2,7 +2,7 @@ const express = require("express")
 const mongoose = require("mongoose")
 const router = require("./routes/todoRoutes")
 const app = express()
-const dotenv = require("dotenv").config()
+require("dotenv").config()
 const port = process.env.PORT || 3000
 
 mongoose.connect("mongodb://localhost:27017/todo-database")
